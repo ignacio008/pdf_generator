@@ -1,4 +1,4 @@
-package com.example.z07_pdf_generator
+package com.genrator.z01_pdf_generator
 
 import io.flutter.embedding.android.FlutterActivity
 
