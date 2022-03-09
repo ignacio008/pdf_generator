@@ -15,6 +15,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Generar PDF',
+      debugShowCheckedModeBanner:false,
       home: home1(),
     );
   }

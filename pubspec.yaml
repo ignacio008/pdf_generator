@@ -43,6 +43,7 @@ dependencies:
   open_file: ^3.2.1
   open_document: 1.0.0
   change_app_package_name: ^0.1.2
+  fluttertoast: 8.0.8
 
 dev_dependencies:
   flutter_test:

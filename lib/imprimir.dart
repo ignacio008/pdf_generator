@@ -8,7 +8,16 @@ import 'package:z07_pdf_generator/var_global.dart';
 import 'package:z07_pdf_generator/widget_pdf.dart';
 
 class Imprimit extends StatefulWidget {
-  Imprimit({Key key}) : super(key: key);
+  String nombrePdf ;
+    String callePdf ;
+    String numeroCasaPdf ;
+    String coloniaPdf ;
+    String estadoPdf ;
+    String cpPdf ;
+    String ciudadPdf ;
+    String numTelPdf ;
+
+  Imprimit(this.nombrePdf,this.callePdf,this.numeroCasaPdf,this.coloniaPdf,this.estadoPdf,this.cpPdf,this.ciudadPdf,this.numTelPdf);
 
   @override
   State<Imprimit> createState() => _ImprimitState();
@@ -38,7 +47,14 @@ class _ImprimitState extends State<Imprimit> {
         build: (context) {
           return 
          
-           PdfWidget.crear();
+           PdfWidget.crear(widget.nombrePdf,
+           widget.callePdf,
+           widget.numeroCasaPdf,
+           widget.coloniaPdf,
+           widget.estadoPdf,
+           widget.cpPdf,
+           widget.ciudadPdf,
+           widget.numTelPdf);
           
         },
       ),

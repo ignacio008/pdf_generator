@@ -7,7 +7,16 @@ import 'package:z07_pdf_generator/var_global.dart';
 class PdfWidget{
 
 
-  static   crear(){
+  static   crear(
+    String nombrePdf,
+    String callePdf,
+    String numeroCasaPdf,
+    String coloniaPdf,
+    String estadoPdf,
+    String cpPdf,
+    String ciudadPdf,
+    String numTelPdf,
+  ){
      
           return pw.Container(
             padding: const pw.EdgeInsets.all(20),
@@ -174,21 +183,21 @@ class PdfWidget{
                                   crossAxisAlignment:
                                       pw.CrossAxisAlignment.start,
                                   children: [
-                                    pw.Text(VriableGlobal.lineaDatos1,
+                                    pw.Text(nombrePdf.toUpperCase(),
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineaDatos2
+                                    pw.Text('${callePdf.toUpperCase()} ${numeroCasaPdf}'
                                         ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineadatos3
+                                    pw.Text(coloniaPdf.toUpperCase()
                                         ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineaDatos4
+                                    pw.Text("${estadoPdf.toUpperCase()},, ${cpPdf},, ${ciudadPdf.toUpperCase()}, ${numTelPdf} "
                                        ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,

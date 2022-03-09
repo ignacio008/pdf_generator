@@ -52,7 +52,7 @@ android {
         applicationId "com.genrator.z01_pdf_generator"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 2
+        versionCode 3
         versionName flutterVersionName
     }
 

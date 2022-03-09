@@ -10,7 +10,16 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:z07_pdf_generator/var_global.dart';
 
 class SaveFile {
-  static Future<File> generatePdf() async {
+  static Future<File> generatePdf(
+     String nombrePdf,
+    String callePdf,
+    String numeroCasaPdf,
+    String coloniaPdf,
+    String estadoPdf,
+    String cpPdf,
+    String ciudadPdf,
+    String numTelPdf,
+  ) async {
     final pdf = pw.Document();
     pdf.addPage(
       pw.Page(
@@ -182,21 +191,21 @@ class SaveFile {
                                   crossAxisAlignment:
                                       pw.CrossAxisAlignment.start,
                                   children: [
-                                    pw.Text(VriableGlobal.lineaDatos1,
+                                    pw.Text(nombrePdf.toUpperCase(),
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineaDatos2
+                                    pw.Text('${callePdf.toUpperCase()} ${numeroCasaPdf}'
                                         ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineadatos3
+                                    pw.Text(coloniaPdf.toUpperCase()
                                         ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,
                                         )),
-                                    pw.Text(VriableGlobal.lineaDatos4
+                                    pw.Text("${estadoPdf.toUpperCase()},, ${cpPdf},, ${ciudadPdf.toUpperCase()}, ${numTelPdf} "
                                        ,
                                         style: const pw.TextStyle(
                                           fontSize: 18,
